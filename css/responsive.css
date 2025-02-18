@@ -1,0 +1,142 @@
+/* pc */
+@media (min-width: 992px) {
+}
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  /* header */
+  nav,
+  header > .container {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    right: 0;
+    translate: 0% -20%;
+  }
+
+  /* menu */
+  .menu_header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #58cbca;
+    width: 24px;
+  }
+  .menu_checkbox {
+    display: none;
+  }
+  .menu_overlay {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* an khi ko dung */
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+  }
+  .menu_checkbox:checked ~ .menu_overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* menu content */
+  .tablet {
+    display: block;
+  }
+  .menu_content {
+    position: fixed;
+    background-image: linear-gradient(to top, #ffffff, #000000);
+    inset: 0 35% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  .menu_checkbox:checked ~ .menu_content {
+    transform: translateX(0);
+  }
+  .menu_content > ul > li {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  .menu_content > ul > li > a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .menu_content > ul > li > a:hover {
+    color: #58cbca;
+    transform: scale(1.2);
+  }
+  .menu_top > img {
+    width: 70%;
+    height: auto;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #58cbca;
+    width: 24px;
+  }
+  .menu_bottom {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+  }
+  .menu_bottom > div > a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .menu_bottom > div > a:hover {
+    color: #58cbca;
+    transform: scale(1.2);
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+  /* footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .thetieude,
+  .logo1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* main trang chu */
+  .boxlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .bg_1,
+  .bg_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bg_1 > img {
+    width: 100%;
+    height: auto;
+  }
+  /* main gioi thieu */
+  .gioithieu2_1,
+  .gioithieu2_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

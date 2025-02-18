@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" >
+    <title>Trang Chủ</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="./trangchu.html"><img src="./images/abc.png" alt="logo" /></a>
+      </div>
+      <div class="container">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm" />
+        </div>
+        <div class="cart">
+          <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+        </div>
+        <div class="login">
+          <a href="/dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+        </div>
+      </div>
+    </header>
+    <!-- nav-->
+    <nav>
+      <ul id="nav_list_pc">
+        <li><a href="./trangchu.html">Sản Phẩm</a></li>
+        <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="dichvu.html">Tin Tức</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+    <!-- menu responsive -->
+    <div class="tablet">
+      <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu_checkbox">
+      <label for="menu_checkbox" class="menu">
+        <svg class="menu_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentcolor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      </label>
+      <!-- overlay -->
+       <label class="menu_overlay" for="menu_checkbox"></label>
+       <!-- menu content -->
+        <div class="menu_content">
+          <div class="menu_top">
+            <img src="./images/logo.webp" alt="logo" />
+           <lable for="menu_checkbox" class="close">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="close">           
+                <path fill="currentcolor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/>
+              </svg>
+           </lable >
+          </div>
+          <ul class="nav_list_mb"></ul>
+          <!-- js copy nav -->
+          <script>
+            const navListPc = document.getElementById('nav_list_pc');
+            const navListMb = document.querySelector('.nav_list_mb');
+            navListMb.innerHTML = navListPc.innerHTML;
+          </script>
+          <div class="menu_bottom">
+            <div class="cart">
+              <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+            </div>
+            <div class="login">
+              <a href="./dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- banner] -->
+    <!-- <div class="col-md-10 offset-md-1 banner">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./images/bannertop4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/banner2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/banner1.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> -->
+    <!-- main -->
+    <main class="container_full">
+      <div class="container">
+        <section class="bg">
+          <!-- san pham sap ra mat -->
+          <h1><a href="">Sản phẩm sắp ra mắt!</a></h1>
+          <div class="boxlist">
+            <a href="/sanpham.html">
+              <img src="./images/trangchu/giaothonggo1.jpg" alt="" />
+              <p>Xếp hình phương tiện giao thông</p>
+            </a>
+            <a href="/sanpham.html">
+              <img src="./images/trangchu/khunglonggo1.webp" alt="" />
+              <p>Đồ chơi gỗ phát triển trí tuệ cho trẻ em</p>
+            </a>
+            <a href="/sanpham.html">
+              <img src="./images/trangchu/bangchucai1.webp" alt="" />
+              <p>Bộ đồ chơi cho bé Montessori 3D</p>
+            </a>
+            <a href="/sanpham.html">
+              <img src="./images/trangchu/amnhac1.webp" alt="" />
+              <p>Xylophone đồ chơi Gấu Nhỏ</p>
+            </a>
+          </div>
+          <!-- gioi thieu -->
+          <h1><a href="./gioithieu.html">Giới Thiệu</a></h1>
+          <div class="bg_1">
+            <img
+              src="./images/Gray and Brown Aesthetic Baby Photo Collage.png"
+              alt=""
+              class="gioithieu_img"
+            />
+            <p>
+              Chào mừng bạn đến với Babyhouse - thiên đường mua sắm dành cho các
+              bậc phụ huynh và những thiên thần nhỏ! Tại Babyhouse, chúng tôi tự
+              hào mang đến cho bạn những sản phẩm đồ chơi và thời trang trẻ em
+              đa dạng, chất lượng hàng đầu và an toàn cho sức khỏe. Tại
+              Babyhouse, sự hài lòng của khách hàng là ưu tiên hàng đầu. Đội ngũ
+              nhân viên tận tâm của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn,
+              giúp bạn tìm được sản phẩm phù hợp nhất cho bé.
+            </p>
+          </div>
+          <!-- tin tuc -->
+          <h1><a href="/tintuc.html">Tin Tức</a></h1>
+          <div class="bg_2">
+            <div class="bg_2_left">
+              <img src="./images/tintuc/tt1.png" alt="" />
+              <h2>Cách dạy con thông minh chuẩn khoa học và hiệu quả cao</h2>
+              <p>
+                Cách dạy con thông minh là cần phải biết con có tiềm năng gì?
+                Theo nhà tâm lý học Howard Gardner, có 9 loại trí thông minh bao
+                gồm: logic - toán học, ngôn ngữ, âm nhạc, không gian, nội tâm,
+                vận động, thiên nhiên, xã hội, triết học. Mỗi đứa trẻ sơ sinh
+                đều có một trí thông minh vượt trội...
+              </p>
+              <p>Ngày đăng: 01/11/2024</p>
+            </div>
+            <div class="bg_2_right">
+              <a href="/tintuc.html">
+                <h2>
+                  Vì sao ba mẹ nên giải mã gen cho bé trong 1000 ngày đầu đời?
+                </h2>
+                <div class="bg_2_right_nd">
+                  <img src="./images/tintuc/tt2.png" alt="" />
+                  <div>
+                    <p>
+                      Trẻ trong 1000 ngày đầu đời không thể nói hay diễn đạt
+                      trọn vẹn thứ mình cần. Thay lời muốn nói của ...
+                    </p>
+                    <p>Ngày đăng: 01/9/2024</p>
+                  </div>
+                </div>
+              </a>
+              <a href="/tintuc.html">
+                <h2>Một số lưu ý giúp ba mẹ chọn quà Noel cho bé 1 - 2 tuổi</h2>
+                <div class="bg_2_right_nd">
+                  <img src="./images/tintuc/tt3.png" alt="" />
+                  <div>
+                    <p>
+                      Giáng Sinh là dịp lễ thích hợp để mỗi người có thể bày tỏ
+                      lòng yêu thương của mình đến người thân yêu thông ...
+                    </p>
+                    <p>Ngày đăng: 02/05/2024</p>
+                  </div>
+                </div>
+              </a>
+              <a href="/tintuc.html">
+                <h2>
+                  Khủng hoảng tuổi lên 3 kéo dài bao lâu và cách giúp con vượt
+                  qua
+                </h2>
+                <div class="bg_2_right_nd">
+                  <img src="./images/tintuc/tt4.png" alt="" />
+                  <div>
+                    <p>
+                      Không chỉ ảnh hưởng trực tiếp đến tâm lý của trẻ, khủng
+                      hoảng tuổi lên 3 còn khiến rất nhiều ba mẹ cảm thấy căng
+                      thẳng và...
+                    </p>
+                    <p>Ngày đăng: 02/05/2024</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="footer">
+        <div class="logo1">
+          <a href="./trangchu.html"><img src="./images/abc.png" alt="" /></a>
+          <div>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+              Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="ft">
+          <div class="thetieude">
+            <p>Babyhouse</p>
+            <div >
+              <a href="http://">Chính sách bảo mật</a>
+              <a href="http://">Điều khoản dịch vụ</a>
+              <a href="http://">Chính sách đổi trả</a>
+              <a href="./lienhe.html">Liên hệ</a>
+            </div>
+          </div>
+          <div class="thetieude">
+            <p>Liên kết</p>
+            <div >
+              <a href="./sanpham.html">Sản phẩm</a>
+              <a href="./tintuc.html">Tin tức</a>
+              <a href="./lienhe.html">Liên hệ</a>
+              <a href="./dangky.html">Đăng ký</a>
+            </div>
+          </div>
+        </div class="ft">
+        <div class="thetieude">
+          <p>Nhận thông tin từ Babyhouse</p>
+          <div>
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button>Đăng ký</button>
+            <p>Theo dõi BabyHouse</p>
+            <div >
+              <a href="">
+                <img src="./images/facebook2.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/stick_zalo.webp" alt="" />
+              <a href="">
+                <img src="./images/shopee.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/youtube2.webp" alt="" />
+              </a>
+              <a href=""><img src="./images/tiktok.webp" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

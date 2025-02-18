@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" >
+    <title>Trang Chủ</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="./trangchu.html"><img src="./images/abc.png" alt="logo" /></a>
+      </div>
+      <div class="container">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm" />
+        </div>
+        <div class="cart">
+          <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+        </div>
+        <div class="login">
+          <a href="./dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+        </div>
+      </div>
+    </header>
+    <!-- nav-->
+    <nav>
+      <ul id="nav_list_pc">
+        <li><a href="trangchu.html">Sản Phẩm</a></li>
+        <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="dichvu.html">Tin Tức</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+    <!-- menu responsive -->
+    <div class="tablet">
+      <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu_checkbox">
+      <label for="menu_checkbox" class="menu">
+        <svg class="menu_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentcolor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      </label>
+      <!-- overlay -->
+       <label class="menu_overlay" for="menu_checkbox"></label>
+       <!-- menu content -->
+        <div class="menu_content">
+          <div class="menu_top">
+            <img src="./images/logo.webp" alt="logo" />
+           <lable for="menu_checkbox" class="close">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="close">           
+                <path fill="currentcolor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/>
+              </svg>
+           </lable >
+          </div>
+          <ul class="nav_list_mb"></ul>
+          <!-- js copy nav -->
+          <script>
+            const navListPc = document.getElementById('nav_list_pc');
+            const navListMb = document.querySelector('.nav_list_mb');
+            navListMb.innerHTML = navListPc.innerHTML;
+          </script>
+          <div class="menu_bottom">
+            <div class="cart">
+              <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+            </div>
+            <div class="login">
+              <a href="./dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- banner] -->
+    <!-- <div class="col-md-10 offset-md-1 banner">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./images/bannertop4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/banner2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/banner1.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> -->
+    <!-- main -->
+    <main class="container_full">
+        <div class="container">
+            <section class="bg_gt">
+                <div>
+                    <h1>Về Babyhouse!</h1>
+                    <p>Cửa hàng BabyHouse chuyên cung cấp đồ chơi và thời trang cho trẻ em, 
+                      mang đến cho các bậc phụ huynh sự lựa chọn phong phú và chất lượng. Chúng tôi có các loại đồ chơi giáo dục, đồ chơi sáng tạo giúp phát triển tư duy và kỹ năng của trẻ, cùng với những bộ trang phục thời trang, dễ thương và thoải mái cho bé. Tất cả sản phẩm đều được đảm bảo an toàn và thân thiện với sức khỏe của trẻ. Hãy đến BabyHouse để tìm kiếm những món quà ý nghĩa và phong cách cho bé yêu của bạn!</p>
+                </div>
+                <div class="gioithieu2_1">
+                    <img src="./images/trangchu/bangchucai1.webp" alt="">
+                    <p><b>Đồ Chơi:</b> Chúng tôi cung cấp một loạt các loại đồ chơi an toàn,
+                         sáng tạo và giáo dục, từ xếp hình, đồ chơi vận động đến các bộ đồ chơi mô phỏng, giúp trẻ em phát triển tư duy và kỹ năng xã hội. Mỗi sản phẩm đều được lựa chọn kỹ lưỡng để đảm bảo an toàn và phù hợp với từng độ tuổi.</p>
+                </div>
+                <div class="gioithieu2_2">
+                    <p><b>Thời Trang:</b> Bộ sưu tập thời trang trẻ em của chúng tôi không chỉ đẹp mắt mà còn thoải mái và dễ chịu. Với các mẫu mã đa dạng, từ trang phục hàng ngày đến những bộ đồ dự tiệc, BabyHouse cam kết mang đến cho bé yêu của bạn phong cách thời trang nổi bật và năng động.</p>
+                    <img src="./images/Gray and Brown Aesthetic Baby Photo Collage.png" alt="">
+                </div>
+                <div class="gioithieu3">
+                    <h1>Cam Kết</h1>
+                    <p>Tại Babyhouse, chúng tôi cam kết mang đến sản phẩm đồ chơi và thời trang trẻ em chất lượng cao, an toàn cho sức khỏe. Mỗi sản phẩm đều được chọn lọc kỹ càng từ các thương hiệu uy tín. Đội ngũ nhân viên tận tâm của chúng tôi luôn sẵn sàng hỗ trợ bạn, đảm bảo trải nghiệm mua sắm thoải mái và hài lòng. Hãy đến với Babyhouse để tìm thấy những điều tuyệt vời nhất cho bé yêu!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr />
+        <div class="footer">
+          <div class="logo1">
+            <a href="./trangchu.html"><img src="./images/abc.png" alt="" /></a>
+            <div>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+                Nam
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                - Điện thoại: 1900 1234
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                - babyhouse@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="ft">
+            <div class="thetieude">
+              <p>Babyhouse</p>
+              <div >
+                <a href="http://">Chính sách bảo mật</a>
+                <a href="http://">Điều khoản dịch vụ</a>
+                <a href="http://">Chính sách đổi trả</a>
+                <a href="./lienhe.html">Liên hệ</a>
+              </div>
+            </div>
+            <div class="thetieude">
+              <p>Liên kết</p>
+              <div >
+                <a href="./sanpham.html">Sản phẩm</a>
+                <a href="./tintuc.html">Tin tức</a>
+                <a href="./lienhe.html">Liên hệ</a>
+                <a href="./dangky.html">Đăng ký</a>
+              </div>
+            </div>
+          </div class="ft">
+          <div class="thetieude">
+            <p>Nhận thông tin từ Babyhouse</p>
+            <div>
+              <input type="text" placeholder="Nhập email của bạn" />
+              <button>Đăng ký</button>
+              <p>Theo dõi BabyHouse</p>
+              <div >
+                <a href="">
+                  <img src="./images/facebook2.webp" alt="" />
+                </a>
+                <a href="">
+                  <img src="./images/stick_zalo.webp" alt="" />
+                <a href="">
+                  <img src="./images/shopee.webp" alt="" />
+                </a>
+                <a href="">
+                  <img src="./images/youtube2.webp" alt="" />
+                </a>
+                <a href=""><img src="./images/tiktok.webp" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+/* Định dạng chung cho toàn bộ trang */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tiêu đề nổi bật */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Văn bản nội dung */
+p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Định dạng liên kết */
+a {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Định dạng đặc biệt */
+strong {
+  font-size: 20px;
+}
+
+em {
+  font-size: 18px;
+}
+
+/* header */
+
+header {
+  padding: 10px 0 0 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+.search input {
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #58cbca;
+  border-radius: 5px;
+}
+header > div > div > a {
+  color: #58cbca;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+header > div > div > a:hover {
+  color: #187f69;
+  background-color: #187f6973;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+header > div > a > img {
+  border-radius: 25%;
+  float: left;
+  width: 200px;
+  height: auto;
+}
+
+/* nav */
+nav {
+  padding: 0 auto;
+  margin: 0 0;
+  background-image: linear-gradient(to top, #636363, #ffffff);
+}
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+nav > ul > li {
+  list-style-type: none;
+}
+nav > ul > li > a {
+  color: #58cbca;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+nav > ul > li > a:hover {
+  color: #187f69;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  background-color: #187f6973;
+  transform: scale(1.09);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* an table resposive */
+.tablet {
+  display: none;
+}
+/* banner */
+/* footer */
+.footer {
+  background-image: linear-gradient(to top, #58cbca, #ffffff);
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr;
+  gap: 10px;
+}
+.logo1 > a > img {
+  border-radius: 25%;
+  width: 200px;
+  height: auto;
+}
+.ft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.thetieude {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0px;
+}
+.thetieude > p {
+  margin: 0 0 0 10px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+.thetieude > div > a {
+  margin-top: 5px;
+  display: block;
+  color: #000;
+}
+.thetieude > div > a:hover {
+  color: #187f69;
+}
+.thetieude > div > p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.thetieude > div > div > a > img {
+  width: 50px;
+  height: auto;
+}
+/* trang chu */
+/* main */
+.container_full {
+  margin-top: 10px;
+  width: 100%;
+}
+.bg {
+  margin: 0 0;
+  padding: 10px;
+}
+.bg > h1 > a {
+  color: #58cbca;
+  font-size: 24px;
+}
+.boxlist {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.boxlist > a {
+  padding: 5px 7px;
+  flex: 1 1 calc(25% - 10px);
+  color: #000;
+  border: 2px solid #00000073;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #58cbca, #f7f7f7);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.boxlist > a:hover {
+  color: #187f69;
+  background-image: linear-gradient(to top, #58cbca, #f7f7f7);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.boxlist > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.bg_1 {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.bg_1 > img {
+  flex: 1 1 calc(40%-10px);
+  width: 40%;
+  height: auto;
+}
+.bg_1 > p {
+  flex: 2 1 calc(60%-10px);
+}
+.bg_2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+}
+.bg_2_left > img {
+  width: 100%;
+  height: auto;
+}
+.bg_2_right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bg_2_right > a {
+  flex: 1 1 calc(33%-10px);
+  color: #000;
+  padding: 5px 7px;
+  border: 2px solid #00000073;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.bg_2_right > a:hover {
+  background-image: linear-gradient(to top, #58cbca, #f7f7f7);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.bg_2_right_nd {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 10px;
+}
+.bg_2_right_nd > img {
+  width: 100%;
+  height: auto;
+}
+.bg_2_right_nd > p {
+  padding-left: 10px;
+}
+/* trang gioi thieu */
+/* main */
+
+.bg_gt > div > h1 {
+  color: #58cbca;
+  font-size: 24px;
+  text-align: center;
+}
+.bg_gt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 5px;
+}
+.bg_gt > div > img {
+  width: 100%;
+  height: auto;
+}
+.gioithieu2_1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.gioithieu2_2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.gioithieu2_1 img,
+.gioithieu2_2 img {
+  width: 100%;
+  height: auto;
+}
+/* main dang nhap */
+
+.login_1 {
+  height: 360px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+  background-image: linear-gradient(to bottom, #f5e2e2, #ffffff);
+}
+.login_1 h2,
+.login_1 p {
+  text-align: center;
+  color: #333;
+}
+button {
+  position: relative;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #0f0f0f, #f00606);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+button:hover {
+  background-image: linear-gradient(to left, #0f0f0f, #f00606);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+input {
+  width: 280px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+p > a {
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+p > a:hover {
+  transform: scale(1.1);
+  color: #f00606;
+}
