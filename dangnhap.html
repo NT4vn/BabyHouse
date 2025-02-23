@@ -8,33 +8,34 @@
     <title>D</title>
   </head>
   <body class="container_full">
-    <!-- header -->
-    <header>
-        <div class="logo">
-          <a href="./index.html"><img src="./images/abc.png" alt="logo" /></a>
-        </div>
-        <div class="container">
-          <div class="search">
-            <input type="text" placeholder="Tìm kiếm" />
-          </div>
-          <div class="cart">
-            <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
-          </div>
-          <div class="login">
-            <a href="/dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
-          </div>
-        </div>
-    </header>
-      <!-- nav-->
-      <nav>
-        <ul id="nav_list_pc">
-          <li><a href="./index.html">Sản Phẩm</a></li>
-          <li><a href="./gioithieu.html">Giới Thiệu</a></li>
-          <li><a href="dichvu.html">Tin Tức</a></li>
-          <li><a href="lienhe.html">Liên Hệ</a></li>
-        </ul>
-      </nav>
-      <!-- menu responsive -->
+   <!-- header -->
+   <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./images/abc.png" alt="logo" /></a>
+    </div>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm" />
+      </div>
+      <div class="cart">
+        <a href="./giohang.html"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+      </div>
+      <div class="login">
+        <a href="/dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+      </div>
+    </div>
+  </header>
+  <!-- nav-->
+  <nav>
+    <ul id="nav_list_pc">
+      <li><a href="./index.html">Trang chủ</a></li>
+      <li><a href="./sanpham.html">Sản Phẩm</a></li>
+      <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+      <li><a href="./tintuc.html">Tin Tức</a></li>
+      <li><a href="./lienhe.html">Liên Hệ</a></li>
+    </ul>
+  </nav>
+    <!-- menu responsive -->
       <div class="tablet">
         <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu_checkbox">
         <label for="menu_checkbox" class="menu">
@@ -82,10 +83,75 @@
             <br />
             <input type="password" name="password" placeholder="Mật khẩu" />
             <br /><br />
-            <button type="submit"><strong>Đăng nhập</strong></button>
+            <button class="button_dangnhap" type="submit"><strong>Đăng nhập</strong></button>
             <p>Bạn chưa có tài khoản? <a href="./dangky.html">Đăng ký</a></p>
           </form>
       </section class="login">>
     </div>
+    <footer>
+      <hr />
+      <div class="footer">
+        <div class="logo1">
+          <a href="./index.html"><img src="./images/abc.png" alt="" /></a>
+          <div>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+              Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="ft">
+          <div class="thetieude">
+            <p>Babyhouse</p>
+            <div >
+              <a href="http://">Chính sách bảo mật</a>
+              <a href="http://">Điều khoản dịch vụ</a>
+              <a href="http://">Chính sách đổi trả</a>
+              <a href="./lienhe.html">Liên hệ</a>
+            </div>
+          </div>
+          <div class="thetieude">
+            <p>Liên kết</p>
+            <div >
+              <a href="./sanpham.html">Sản phẩm</a>
+              <a href="./tintuc.html">Tin tức</a>
+              <a href="./lienhe.html">Liên hệ</a>
+              <a href="./dangky.html">Đăng ký</a>
+            </div>
+          </div>
+        </div class="ft">
+        <div class="thetieude">
+          <p>Nhận thông tin từ Babyhouse</p>
+          <div>
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button>Đăng ký</button>
+            <p>Theo dõi BabyHouse</p>
+            <div >
+              <a href="">
+                <img src="./images/facebook2.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/stick_zalo.webp" alt="" />
+              <a href="">
+                <img src="./images/shopee.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/youtube2.webp" alt="" />
+              </a>
+              <a href=""><img src="./images/tiktok.webp" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" >
+    <title>Trang Chủ</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./images/abc.png" alt="logo" /></a>
+      </div>
+      <div class="container">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm" />
+        </div>
+        <div class="cart">
+          <a href="./giohang.html"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+        </div>
+        <div class="login">
+          <a href="/dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+        </div>
+      </div>
+    </header>
+    <!-- nav-->
+    <nav>
+      <ul id="nav_list_pc">
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./sanpham.html">Sản Phẩm</a></li>
+        <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="./tintuc.html">Tin Tức</a></li>
+        <li><a href="./lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+    <!-- menu responsive -->
+    <div class="tablet">
+      <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu_checkbox">
+      <label for="menu_checkbox" class="menu">
+        <svg class="menu_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentcolor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      </label>
+      <!-- overlay -->
+       <label class="menu_overlay" for="menu_checkbox"></label>
+       <!-- menu content -->
+        <div class="menu_content">
+          <div class="menu_top">
+            <img src="./images/logo.webp" alt="logo" />
+           <lable for="menu_checkbox" class="close">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="close">           
+                <path fill="currentcolor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/>
+              </svg>
+           </lable >
+          </div>
+          <ul class="nav_list_mb"></ul>
+          <!-- js copy nav -->
+          <script>
+            const navListPc = document.getElementById('nav_list_pc');
+            const navListMb = document.querySelector('.nav_list_mb');
+            navListMb.innerHTML = navListPc.innerHTML;
+          </script>
+          <div class="menu_bottom">
+            <div class="cart">
+              <a href="#"><b>Giỏ hàng </b><i class="fas fa-shopping-cart"></i> </a>
+            </div>
+            <div class="login">
+              <a href="./dangnhap.html"><b>Đăng nhập </b><i class="fas fa-user"></i> </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- banner] -->
+    <!-- main -->
+    <main class="containner_full">
+     <div class="container">
+        <section class="sanpham_goc">
+          <div class="loc">
+            <label for="">gia</label>
+            <select name="" id="">
+              <option value="">Tất cả</option>
+              <option value="">Dưới 100k</option>
+              <option value="">100k - 200k</option>
+              <option value="">200k - 300k</option>
+              <option value="">Trên 300k</option>
+            </select>
+            <label for="">Loại</label>
+            <select name="" id="">
+              <option value="">Tất cả</option>
+              <option value="">Quần áo</option>
+              <option value="">Đồ chơi</option>
+            </select>
+          </div>
+          <div class="sanpham">
+            <div class="sp_sp">
+                <img src="./images/sanpham/toy1.webp" alt="">
+                <p>Đồ chơi đập chuột</p>
+                <h5>Giá: 200.000 VNĐ</h5>
+              <div class="datmua">
+                <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+                <button class="btn">Đặt hàng</button>
+              </div>
+            </div>
+            <div class="sp_sp">
+              <img src="./images/sanpham/toy2.webp" alt="">
+              <p>Rùa nước nhà tắm</p>
+              <h5>Giá: 80.000 VNĐ</h5>
+              <div class="datmua">
+                <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+                <button class="btn">Đặt hàng</button>
+              </div>
+            </div>
+            <div class="sp_sp">
+              <img src="./images/sanpham/toy3.webp" alt="">
+              <p>Đồ chơi xếp hình</p>
+              <h5>Giá: 299.000 VNĐ</h5>
+              <div class="datmua">
+                <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+                <button class="btn">Đặt hàng</button>
+              </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy4.webp" alt="">
+            <p>Khối Xây Dựng Lắp Ráp Vải</p>
+            <h5>Giá: 90.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy5.webp" alt="">
+            <p>Đồ Chơi Máy Gắp Thú Bông</p>
+            <h5>Giá: 600.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy6.jpeg" alt="">
+            <p>Đồ Chơi Xe Gỗ Và Thú Gỗ</p>
+            <h5>Giá: 190.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy7.jpg" alt="">
+            <p>Bảng ghép hình núm gỗ</p>
+            <h5>Giá: 99.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy8.jpeg" alt="">
+            <p>Chó robot điều khiển từ xa</p>
+            <h5>Giá: 490.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy9.jpeg" alt="">
+            <p>Gà con đồ chơi vặn cót</p>
+            <h5>Giá: 59.000 VNĐ</h5>  
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/toy10.jpg" alt="">
+            <p>Bộ Vợt Cầu Lông Đồ Chơi</p>
+            <h5>Giá: 99.000 VNĐ</h5>   
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div> 
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo1.jpg" alt="">
+            <p>Bộ quần áo jane</p>
+            <h5>Giá: 99.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo2.jpg" alt="">
+            <p>Bộ quần áo angela</p>
+            <h5>Giá: 149.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo3.jpg" alt="">
+            <p>Bộ quần áo Peony</p>
+            <h5>Giá: 299.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo4.jpg" alt="">
+            <p>Bộ quần áo holly</p>
+            <h5>Giá: 199.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo5.jpg" alt="">
+            <p>Bộ quần áo star star</p>
+            <h5>Giá: 399.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo6.jpg" alt="">
+            <p>Bộ quần áo coco</p>
+            <h5>Giá: 99.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo7.jpg" alt="">
+            <p>Bộ quần áo paly</p>
+            <h5>Giá: 199.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo8.jpg" alt="">
+            <p>Bộ quần áo ballon</p>
+            <h5>Giá: 399.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo9.jpg" alt="">
+            <p>Bộ quần áo margarine</p>
+            <h5>Giá: 339.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+            </div>
+            <div class="sp_sp">
+            <img src="./images/sanpham/bo10.jpg" alt="">
+            <p>Bộ áo quần rời wood</p>
+            <h5>Giá: 99.000 VNĐ</h5>
+            <div class="datmua">
+              <input class="input_datmua" type="number" name="" id="" maxlength="100" minlength="0">
+              <button class="btn">Đặt hàng</button>
+            </div>
+          </div>
+        </section>
+     </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <hr />
+      <div class="footer">
+        <div class="logo1">
+          <a href="./index.html"><img src="./images/abc.png" alt="" /></a>
+          <div>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+              Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="ft">
+          <div class="thetieude">
+            <p>Babyhouse</p>
+            <div >
+              <a href="http://">Chính sách bảo mật</a>
+              <a href="http://">Điều khoản dịch vụ</a>
+              <a href="http://">Chính sách đổi trả</a>
+              <a href="./lienhe.html">Liên hệ</a>
+            </div>
+          </div>
+          <div class="thetieude">
+            <p>Liên kết</p>
+            <div >
+              <a href="./sanpham.html">Sản phẩm</a>
+              <a href="./tintuc.html">Tin tức</a>
+              <a href="./lienhe.html">Liên hệ</a>
+              <a href="./dangky.html">Đăng ký</a>
+            </div>
+          </div>
+        </div class="ft">
+        <div class="thetieude">
+          <p>Nhận thông tin từ Babyhouse</p>
+          <div>
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button class="btft">Đăng ký</button>
+            <p>Theo dõi BabyHouse</p>
+            <div >
+              <a href="">
+                <img src="./images/facebook2.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/stick_zalo.webp" alt="" />
+              <a href="">
+                <img src="./images/shopee.webp" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/youtube2.webp" alt="" />
+              </a>
+              <a href=""><img src="./images/tiktok.webp" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
