@@ -81,25 +81,58 @@
         </div>
     </div>
     <!-- banner] -->
+    <div class="banner">
+      <div class="list">
+        <div class="item">
+          <img src="/images/bannertop4.png" />
+        </div>
+        <div class="item">
+          <img src="/images/banner2.png" />
+        </div>
+        <div class="item">
+          <img src="/images/banner1.webp" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="/css/app.js"></script>
     <!-- main -->
     <main class="containner_full">
-     <div class="container">
+     <div class="container_sp">
+        <div class="tieude_sp">
+          <h2>Sản phẩm BabyHouse</h2>
+          <p>Chúng tôi cung cấp các sản phẩm chất lượng, an toàn cho bé yêu của bạn</p>
+          <hr>
+        </div>
         <section class="sanpham_goc">
           <div class="loc">
-            <label for="">gia</label>
-            <select name="" id="">
-              <option value="">Tất cả</option>
-              <option value="">Dưới 100k</option>
-              <option value="">100k - 200k</option>
-              <option value="">200k - 300k</option>
-              <option value="">Trên 300k</option>
-            </select>
-            <label for="">Loại</label>
-            <select name="" id="">
-              <option value="">Tất cả</option>
-              <option value="">Quần áo</option>
-              <option value="">Đồ chơi</option>
-            </select>
+            <div class="loc_gia">
+              <label for="">Giá thành:</label>
+                <select name="" id="">
+                  <option value="">Tất cả</option>
+                  <option value="">Dưới 100k</option>
+                  <option value="">100k - 200k</option>
+                  <option value="">200k - 300k</option>
+                  <option value="">Trên 300k</option>
+                </select>
+            </div>
+            <div class="loc_gia">
+              <label for="">Loại:</label>
+                <select name="" id="">
+                  <option value="">Tất cả</option>
+                  <option value="">Quần áo</option>
+                  <option value="">Đồ chơi</option>
+                </select>
+            </div>
+            <button class="loc_timkiem">Tìm kiếm</button>
           </div>
           <div class="sanpham">
             <div class="sp_sp">
@@ -326,7 +359,7 @@
               <a href="./dangky.html">Đăng ký</a>
             </div>
           </div>
-        </div class="ft">
+        </div >
         <div class="thetieude">
           <p>Nhận thông tin từ Babyhouse</p>
           <div>

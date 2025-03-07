@@ -71,22 +71,48 @@
             </div>
         </div>
       </div>
-    <div class="container">
+      <!-- banner] -->
+   <div class="banner">
+    <div class="list">
+      <div class="item">
+        <img src="/images/bannertop4.png" />
+      </div>
+      <div class="item">
+        <img src="/images/banner2.png" />
+      </div>
+      <div class="item">
+        <img src="/images/banner1.webp" />
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><</button>
+      <button id="next">></button>
+    </div>
+    <ul class="dots">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script src="/css/app.js"></script>
+    <div class="container_login">
       <section class="login_1">
-          <form action="" method="post">
+          <form id="formlogin">
             <h2>ĐĂNG NHẬP</h2>
             <label for="username"><b>Username:</b></label>
-            <br />
-            <input type="text" name="name" placeholder="Tên đăng nhập" />
-            <br /><br />
-            <label for="password"><b>Password:</b></label>
-            <br />
-            <input type="password" name="password" placeholder="Mật khẩu" />
-            <br /><br />
+              <br />
+              <input type="text" id="name_login" placeholder="Tên đăng nhập" />
+              <div  id="er_user_login">Username không được để trống</div>
+              <br />
+              <label for="password"><b>Password:</b></label>
+              <br />
+              <input type="text" id="password_login" placeholder="Mật khẩu" />
+              <div id="er_password_login">Password không được để trống</div>
+              <br />
             <button class="button_dangnhap" type="submit"><strong>Đăng nhập</strong></button>
             <p>Bạn chưa có tài khoản? <a href="./dangky.html">Đăng ký</a></p>
           </form>
-      </section class="login">>
+      </section >
     </div>
     <footer>
       <hr />
